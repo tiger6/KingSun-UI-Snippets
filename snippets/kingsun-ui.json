@@ -1,0 +1,1289 @@
+{
+	"Vue single file component with ts":{
+		"prefix": "ksbase-ts",
+		"body": [
+			"<template>",
+			"\t<div>",
+			"\t\t${TM_FILENAME_BASE}",
+			"\t</div>",
+			"</template>",
+			"\r<script lang=\"ts\">",
+			"import { Component, Vue } from 'vue-property-decorator';",
+			"\r@Component",
+			"export default class ${TM_FILENAME_BASE} extends Vue {",
+			"\t$1\r}",
+			"</script>",
+			"\r<style lang=\"scss\" scoped>",
+			"\r</style>",
+		  "$0"
+		],
+		"description": "ks typescript component template"
+	},
+	"Basic: Layout ks-row": {
+        "prefix": "ksrow",
+        "body": [
+            "<ks-row :gutter=\"${1:20}\">",
+                "\t<ks-col :span=\"${2:12}\" :offset=\"${3:0}\">${4}</ks-col>",
+                "\t<ks-col :span=\"${5:12}\" :offset=\"${6:0}\">${7}</ks-col>",
+            "</ks-row>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-row> with <ks-col>"
+    },
+
+    "Basic: Layout ks-col": {
+        "prefix": "kscol",
+        "body": [
+            "<ks-col :span=\"${1}\" :offset=\"${2:0}\">${3}</ks-col>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-col>"
+    },
+
+    "Basic: Layout hidden class": {
+        "prefix": "kshc",
+        "body": [
+            "${1|hidden-xs-only,hidden-sm-only,hidden-sm-and-down,hidden-sm-and-up,hidden-md-only,hidden-md-and-down,hidden-md-and-up,hidden-lg-only,hidden-lg-and-down,hidden-lg-and-up,hidden-xl-only|}"
+        ],
+        "description": "KingSun UI hidden class"
+    },
+
+    "Basic: Container ks-container": {
+        "prefix": "kscon",
+        "body": [
+            "<ks-container :direction=\"${1:vertical}\">",
+                "\t<ks-header height=\"$2\">",
+                    "\t\t${3:<!-- Header content -->}",
+                "\t</ks-header>",
+                "\t<ks-container :direction=\"${4:horizontal}\">",
+                    "\t\t<ks-aside width=\"${5:200px}\">",
+                        "\t\t\t${6:<!-- Aside content -->}",
+                    "\t\t</ks-aside>",
+                    "\t\t<ks-container :direction=\"${7:vertical}\">",
+                        "\t\t\t<ks-main height=\"$8\">",
+                            "\t\t\t\t${9:<!-- Main content -->}",
+                        "\t\t\t</ks-main>",
+                        "\t\t\t<ks-footer height=\"$10\">",
+                            "\t\t\t\t${11:<!-- Footer content -->}",
+                        "\t\t\t</ks-footer>",
+                    "\t\t</ks-container>",
+                "\t</ks-container>",
+            "</ks-container>",
+            "${12}"
+        ],
+        "description": "KingSun UI <ks-container>"
+    },
+
+    "Basic: Container ks-header": {
+        "prefix": "kshe",
+        "body": [
+            "<ks-header height=\"$1\">",
+                "\t${2:<!-- Header content -->}",
+            "</ks-header>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-header>"
+    },
+
+    "Basic: Container ks-aside": {
+        "prefix": "ksas",
+        "body": [
+            "<ks-aside width=\"${1:200px}\">",
+                "\t${2:<!-- Aside content -->}",
+            "</ks-aside>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-aside>"
+    },
+
+    "Basic: Container ks-main": {
+        "prefix": "ksma",
+        "body": [
+            "<ks-main height=\"${1}\">",
+                "\t${2:<!-- Main content -->}",
+            "</ks-main>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-main>"
+    },
+
+    "Basic: Container ks-footer": {
+        "prefix": "ksfo",
+        "body": [
+            "<ks-footer height=\"${1}\">",
+                "\t${2:<!-- Footer content -->}",
+            "</ks-footer>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-footer>"
+    },
+
+    "Basic: Color blue": {
+        "prefix": "kscb",
+        "body": ["#409EFF"],
+        "description": "KingSun UI Color Blue"
+    },
+
+    "Basic: Color danger": {
+        "prefix": "kscd",
+        "body": ["#F56C6C"],
+        "description": "KingSun UI Color Danger"
+    },
+
+    "Basic: Color info": {
+        "prefix": "ksci",
+        "body": ["#909399"],
+        "description": "KingSun UI Color Info"
+    },
+
+    "Basic: Color success": {
+        "prefix": "kscs",
+        "body": ["#67C23A"],
+        "description": "KingSun UI Color Success"
+    },
+
+    "Basic: Color waring": {
+        "prefix": "kscw",
+        "body": ["#E6A23C"],
+        "description": "KingSun UI Color Waring"
+    },
+
+    "Basic: Color primary text": {
+        "prefix": "kscpt",
+        "body": ["#303133"],
+        "description": "KingSun UI Color Primary Text"
+    },
+
+    "Basic: Color regular text": {
+        "prefix": "kscrt",
+        "body": ["#606266"],
+        "description": "KingSun UI Color Regular Text"
+    },
+
+    "Basic: Color secondary text": {
+        "prefix": "kscst",
+        "body": ["#909399"],
+        "description": "KingSun UI Color Secondary Text"
+    },
+
+    "Basic: Color placeholder text": {
+        "prefix": "kscht",
+        "body": ["#C0C4CC"],
+        "description": "KingSun UI Color Placeholder Text"
+    },
+
+    "Basic: Color Base Border": {
+        "prefix": "kscbb",
+        "body": ["#DCDFE6"],
+        "description": "KingSun UI Color Base Border"
+    },
+
+    "Basic: Color Light Border": {
+        "prefix": "ksclb",
+        "body": ["#E4E7ED"],
+        "description": "KingSun UI Color Light Border"
+    },
+
+    "Basic: Color Lighter Border": {
+        "prefix": "ksclrb",
+        "body": ["#EBEEF5"],
+        "description": "KingSun UI Color Lighter Border"
+    },
+
+    "Basic: Color Extra Light Border": {
+        "prefix": "kselb",
+        "body": ["#DCDFE6"],
+        "description": "KingSun UI Color Extra Light Border"
+    },
+
+    "Basic: Typography": {
+        "prefix": "kstypo",
+        "body": ["font-family: \"Helvetica Neue\",Helvetica,\"PingFang SC\",\"Hiragino Sans GB\",\"Microsoft YaHei\",\"微软雅黑\",Arial,sans-serif;"],
+        "description": "KingSun UI Font-family"
+    },
+
+    "Basic: Border Basic Shadow": {
+        "prefix": "ksbbs",
+        "body": ["box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);"],
+        "description": "KingSun UI Border Basic Shadow"
+    },
+
+    "Basic: Border Light Shadow": {
+        "prefix": "ksbls",
+        "body": ["box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);"],
+        "description": "KingSun UI Border Light Shadow"
+    },
+
+    "Basic: Button": {
+        "prefix": "ksb",
+        "body": [
+            "<ks-button type=\"${1|primary,text,info,success,warning,danger|}\" size=\"${2|default,medium,small,mini|}\" @click=\"$3\">${4}</ks-button>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-button>"
+    },
+
+    "Basic: Button Group": {
+        "prefix": "ksbg",
+        "body": [
+            "<ks-button-group>",
+                "\t<ks-button type=\"${1|primary,text,info,success,warning,danger|}\" size=\"${2|default,medium,small,mini|}\" @click=\"$3\">${4}</ks-button>",
+                "\t<ks-button type=\"${5|primary,text,info,success,warning,danger|}\" size=\"${2|default,medium,small,mini|}\" @click=\"$6\">${7}</ks-button>",
+            "</ks-button-group>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-button-group>"
+    },
+
+    "Basic: Link": {
+        "prefix": "ksl",
+        "body": [
+            "<ks-link type=\"${1|primary,success,warning,danger,info|}\" :underline=\"${2:false}\" href=\"${3}\" target=\"${4:_blank}\">${5}</ks-link>",
+            "${6}"
+        ],
+        "description": "KingSun UI <ks-button>"
+    },
+
+    "Form: Radio": {
+        "prefix": "ksr",
+        "body": [
+            "<ks-radio v-model=\"${1}\" label=\"${2}\" @change=\"${3}\">${4}</ks-radio>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-radio>"
+    },
+
+    "Form: Radio Group": {
+        "prefix": "ksrg",
+        "body": [
+            "<ks-radio-group v-model=\"$1\" @change=\"$2\">",
+                "\t<ks-radio v-for=\"${3:item} in ${4:items}\" :key=\"${3:item}.${5:key}\" :label=\"${3:item}.${6:label}\">",
+                    "\t\t{{${3:item}.${7:title}}}",
+                "\t</ks-radio>",
+            "</ks-radio-group>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-radio-group> with <ks-radio>"
+    },
+
+    "Form: Radio Button Group": {
+        "prefix": "ksrbg",
+        "body": [
+            "<ks-radio-group v-model=\"$1\" size=\"${2|normal,medium,small,mini|}\" @change=\"$3\">",
+                "\t<ks-radio-button v-for=\"${4:item} in ${5:items}\" :key=\"${4:item}.${6:key}\" :label=\"${4:item}.${7:label}\">",
+                    "\t\t{{${4:item}.${8:title}}}",
+                "\t</ks-radio-button>",
+            "</ks-radio-group>",
+            "${9}"
+        ],
+        "description": "KingSun UI <ks-radio-group> with <ks-radio-button>"
+    },
+
+
+    "Form: Radio Button": {
+        "prefix": "ksrb",
+        "body": [
+            "<ks-radio-button v-model=\"${1}\" label=\"${2}\">${3}</ks-radio-button>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-radio>"
+    },
+
+    "Form: Checkbox": {
+        "prefix": "ksc",
+        "body": [
+            "<ks-checkbox v-model=\"${1}\" label=\"${2}\" :indeterminate=\"${3:false}\" @change=\"${4}\">{{$5}}</ks-checkbox>",
+            "${6}"
+        ],
+        "description": "KingSun UI <ks-checkbox>"
+    },
+
+    "Form: Checkbox Group": {
+        "prefix": "kscg",
+        "body": [
+            "<ks-checkbox-group v-model=\"$1\" @change=\"${2}\">",
+                "\t<ks-checkbox v-for=\"${3:item} in ${4:items}\" :key=\"${3:item}.${5:key}\" :label=\"${3:item}.${6:label}\">",
+                    "\t\t{{${3:item}.${7:label}}}",
+                "\t</ks-checkbox>",
+            "</ks-checkbox-group>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-checkbox-group> with <ks-checkbox>"
+    },
+
+    "Form: Checkbox Button Group": {
+        "prefix": "kscbg",
+        "body": [
+            "<ks-checkbox-group v-model=\"$1\" size=\"${2|normal,medium,small,mini|}\"  @change=\"${3}\">",
+                "\t<ks-checkbox-button v-for=\"${4:item} in ${5:items}\" :key=\"${4:item}.${6:key}\" :label=\"${4:item}.${7:label}\">",
+                    "\t\t{{${4:item}.${8:label}}}",
+                "\t</ks-checkbox-button>",
+            "</ks-checkbox-group>",
+            "${9}"
+        ],
+        "description": "KingSun UI <ks-checkbox-group> with <ks-checkbox-button>"
+    },
+
+    "Form: Checkbox Button": {
+        "prefix": "kscbt",
+        "body": [
+            "<ks-checkbox-button v-model=\"${1}\" label=\"${2}\" :indeterminate=\"${3:false}\" @change=\"${4}\">{{$5}}</ks-checkbox-button>",
+            "${6}"
+        ],
+        "description": "KingSun UI <ks-checkbox-button>"
+    },
+
+    "Form: Input": {
+        "prefix": "ksi",
+        "body": [
+            "<ks-input v-model=\"$1\" placeholder=\"$2\" size=\"${3|normal,medium,small,mini|}\" clearable @change=\"$4\">$5</ks-input>",
+            "${6}"
+        ],
+        "description": "KingSun UI <ks-input>"
+    },
+
+    "Form: Textarea": {
+        "prefix": "ksit",
+        "body": [
+            "<ks-input type=\"${1|text,textarea|}\" :rows=\"${2:2}\" v-model=\"$3\" placeholder=\"$4\" ",
+                "\t:maxlength=\"${5:-1}\" :show-word-limit=\"${6|false,true|}\" :autosize=\"{ minRows: ${7:2}, maxRows: ${8:4} }\">",
+            "</ks-input>",
+            "${9}"
+        ],
+        "description": "KingSun UI <ks-input type=\"text,textarea\">"
+    },
+
+    "Form: Autocomplete": {
+        "prefix": "ksa",
+        "body": [
+            "<ks-autocomplete v-model=\"$1\" value-key=\"$2\" placeholder=\"${3}\" clearable",
+                "\t:debounce=\"$4\" :fetch-suggestions=\"${5}\"  @select=\"$6\">$7</ks-autocomplete>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-autocomplete>"
+    },
+
+    "Form: Input Slot": {
+        "prefix": "ksis",
+        "body": [
+            "<template slot=\"${1|prefix,suffix,prepend,append|}\">$2</template>",
+            "${3}"
+        ],
+        "description": "KingSun UI <template slot=''>"
+    },
+
+    "Form: InputNumber": {
+        "prefix": "ksin",
+        "body": [
+            "<ks-input-number v-model=\"$1\" size=\"${2|normal,medium,small,mini|}\" label=\"$3\"",
+                "\t:min=\"${4:1}\" :max=\"${5:10}\" :step=\"${6:1}\" :controls=\"${7|true,false|}\" controls-position=\"${8|both,right|}\" @change=\"$9\">",
+            "</ks-input-number>",
+            "${10}"
+        ],
+        "description": "KingSun UI <ks-input-number>"
+    },
+
+    "Form: Select": {
+        "prefix": "kssel",
+        "body": [
+            "<ks-select v-model=\"$1\" value-key=\"$2\" placeholder=\"$3\" clearable filterable @change=\"$4\">",
+                "\t<ks-option v-for=\"${5:item} in ${6:options}\"",
+                    "\t\t:key=\"${5:item}.${7:value}\"",
+                    "\t\t:label=\"${5:item}.${8:label}\"",
+                    "\t\t:value=\"${5:item}.${9:value}\">",
+                "\t</ks-option>",
+            "</ks-select>",
+            "${10}"
+        ],
+        "description": "KingSun UI <ks-select>"
+    },
+
+    "Form: Select Remote Search": {
+        "prefix": "ksselr",
+        "body": [
+            "<ks-select v-model=\"$1\" value-key=\"$2\" placeholder=\"$3\" clearable filterable",
+                "\tremote reserve-keyword :remote-method=\"$4\" :loading=\"$5\" @change=\"$6\">",
+                "\t<ks-option v-for=\"${7:item} in ${8:options}\"",
+                    "\t\t:key=\"${7:item}.${9:value}\"",
+                    "\t\t:label=\"${7:item}.${10:label}\"",
+                    "\t\t:value=\"${7:item}.${11:value}\">",
+                "\t</ks-option>",
+            "</ks-select>",
+            "${12}"
+        ],
+        "description": "KingSun UI <ks-select>"
+    },
+
+    "Form: Select Option": {
+        "prefix": "ksop",
+        "body": [
+            "<ks-option :key=\"$1\" :label=\"$2\" :value=\"$3\"></ks-option>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-option>"
+    },
+
+    "Form: Select Option Group": {
+        "prefix": "ksopg",
+        "body": [
+            "<ks-option-group v-for=\"${1:group} in ${2:options}\"",
+                "\t:key=\"${1:group}.${3:value}\"",
+                "\t:label=\"${1:group}.${4:label}\">",
+                "\t<ks-option v-for=\"${5:item} in ${1:group}.${6:options}\"",
+                    "\t\t:key=\"${5:item}.${7:value}\"",
+                    "\t\t:label=\"${5:item}.${8:label}\"",
+                    "\t\t:value=\"${5:item}.${9:value}\">",
+                "\t</ks-option>",
+            "<ks-option-group>",
+            "${10}"
+        ],
+        "description": "KingSun UI <ks-option-group>"
+    },
+
+    "Form: Cascader": {
+        "prefix": "ksca",
+        "body": [
+            "<ks-cascader :options=\"${1:options}\" v-model=\"${2}\" clearable filterable :show-all-levels=\"${3|false,true|}\"",
+                "\t:props=\"{ expandTrigger: ${4|'hover','click'|}, multiple: ${5|true,false|}, checkStrictly: ${6|true,false|} }\" @change=\"${7}\">",
+            "</ks-cascader>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-cascader>"
+    },
+
+    "Form: Cascader Panel": {
+        "prefix": "kscap",
+        "body": [
+            "<ks-cascader :options=\"${1:options}\" v-model=\"${2}\" @change=\"${3}\"",
+                "\t:props=\"{ expandTrigger: ${4|'hover','click'|}, multiple: ${5|true,false|}, checkStrictly: ${6|true,false|} }\">",
+            "</ks-cascader>",
+            "${7}"
+        ],
+        "description": "KingSun UI <ks-cascader-panel>"
+    },
+
+    "Form: Switch": {
+        "prefix": "kssw",
+        "body": [
+            "<ks-switch v-model=\"$1\" :active-value=\"${2:true}\" :inactive-value=\"${3:false}\" @change=\"$4\">",
+            "</ks-switch>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-switch>"
+    },
+
+    "Form: Slider": {
+        "prefix": "kssl",
+        "body": [
+            "<ks-slider v-model=\"$1\" :min=\"$2\" :max=\"$3\" :step=\"$4\" vertical=\"${5:false}\" @change=\"$6\">",
+            "</ks-slider>",
+            "${7}"
+        ],
+        "description": "KingSun UI <ks-slider>"
+    },
+
+    "Form: Time Select": {
+        "prefix": "ksts",
+        "body": [
+            "<ks-time-select v-model=\"$1\" size=\"${2|normal,medium,small,mini|}\" placeholder=\"$3\"",
+                "\t:picker-options=\"{",
+                    "\t\tstart: '${4}',",
+                    "\t\tstep: '${5:00:30}',",
+                    "\t\tend: '${6}',",
+                "\t}\"",
+                "\tchange=\"${7}\">",
+            "</ks-time-select>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-time-select>"
+    },
+
+    "Form: Time Select Range": {
+        "prefix": "kstsr",
+        "body": [
+            "<ks-time-select v-model=\"$1\" size=\"${2|normal,medium,small,mini|}\" placeholder=\"$3\"",
+                "\t:picker-options=\"{",
+                    "\t\tstart: '${4}',",
+                    "\t\tstep: '${5:00:30}',",
+                    "\t\tend: '${6}',",
+                "\t}\">",
+            "</ks-time-select>",
+            "<ks-time-select v-model=\"$7\" size=\"${2|normal,medium,small,mini|}\" placeholder=\"$8\"",
+                "\t:picker-options=\"{",
+                    "\t\tstart: '${4}',",
+                    "\t\tstep: '${5:00:30}',",
+                    "\t\tend: '${6}',",
+                    "\t\tminTime: $1",
+                "\t}\">",
+            "</ks-time-select>",
+            "${9}"
+        ],
+        "description": "KingSun UI <ks-time-select> range"
+    },
+
+    "Form: TimePicker": {
+        "prefix": "kstp",
+        "body": [
+            "<ks-time-picker v-model=\"$1\" size=\"${2|normal,medium,small,mini|}\" arrow-control",
+                "\t:picker-options=\"{",
+                    "\t\tselectableRange: '${3:18:30:00} - ${4:20:30:00}'",
+                "\t}\"",
+                "\tplaceholder=\"${5:任意时间点}\">",
+            "</ks-time-picker>",
+            "${6}"
+        ],
+        "description": "KingSun UI <ks-time-picker>"
+    },
+
+    "Form: TimePicker Range": {
+        "prefix": "kstpr",
+        "body": [
+            "<ks-time-picker v-model=\"$1\" size=\"${2|normal,medium,small,mini|}\" arrow-control",
+                "\tis-range range-separator=\"${3:-}\" start-placeholder=\"$4\" end-placeholder=\"$5\"",
+                "\t:picker-options=\"{",
+                    "\t\tselectableRange: '${6:18:30:00} - ${7:20:30:00}'",
+                "\t}\">",
+            "</ks-time-picker>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-time-picker is-range>"
+    },
+
+    "Form: DatePicker": {
+        "prefix": "ksdp",
+        "body": [
+            "<ks-date-picker v-model=\"$1\" type=\"${2|year,month,date,dates,week|}\" size=\"${3|normal,medium,small,mini|}\" placeholder=\"${4:选择日期时间}\">",
+            "</ks-date-picker>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-date-picker>"
+    },
+
+    "Form: DatePicker Range": {
+        "prefix": "ksdpr",
+        "body": [
+            "<ks-date-picker v-model=\"$1\" type=\"${2|daterange,monthrange|}\" size=\"${3|normal,medium,small,mini|}\"",
+                "\trange-separator=\"${4:-}\" start-placeholder=\"$5\" end-placeholder=\"$6\">",
+            "</ks-date-picker>",
+            "${7}"
+        ],
+        "description": "KingSun UI <ks-date-picker>"
+    },
+
+    "Form: DateTimePicker": {
+        "prefix": "ksdtp",
+        "body": [
+            "<ks-date-picker v-model=\"$1\" type=\"datetime\" size=\"${2|normal,medium,small,mini|}\" placeholder=\"${3:选择日期时间}\">",
+            "</ks-date-picker>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-date-picker type=\"datetime\">"
+    },
+
+    "Form: DateTimePicker Range": {
+        "prefix": "ksdtpr",
+        "body": [
+            "<ks-date-picker v-model=\"$1\" type=\"datetimerange\" size=\"${2|normal,medium,small,mini|}\"",
+                "\trange-separator=\"${3:-}\" start-placeholder=\"$4\" end-placeholder=\"$5\">",
+            "</ks-date-picker>",
+            "${6}"
+        ],
+        "description": "KingSun UI <ks-date-picker type=\"datetime\">"
+    },
+
+    "Form: Upload": {
+        "prefix": "ksu",
+        "body": [
+            "<ks-upload",
+                "\taction=\"$1\"",
+                "\tref=\"${2:upload}\"",
+                "\t:on-remove=\"$3\"",
+                "\t:auto-upload=\"false\"",
+                "\tmultiple",
+                "\t:limit=\"${4:5}\"",
+                "\t:on-exceed=\"$5\"",
+                "\t:file-list=\"$6\">",
+                "\t<ks-button slot=\"trigger\" size=\"small\" type=\"primary\">${7:select file}</ks-button>",
+                "\t<ks-button style=\"margin-left: 10px;\" size=\"small\" type=\"success\" @click=\"$8\">${9:upload to server}</ks-button>",
+                "\t<div slot=\"tip\" class=\"ks-upload__tip\">${10:jpg/png files with a size less than 500kb}</div>",
+            "</ks-upload>",
+            "${11}"
+        ],
+        "description": "KingSun UI <ks-upload>"
+    },
+
+    "Form: Rate": {
+        "prefix": "ksra",
+        "body": [
+            "<ks-rate v-model=\"$1\" :allow-half=\"${2|false,true|}\" @change=\"$3\"></ks-rate>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-rate>"
+    },
+
+    "Form: ColorPicker": {
+        "prefix": "kscp",
+        "body": [
+            "<ks-color-picker v-model=\"$1\" size=\"${2|normal,medium,small,mini|}\" :show-alpha=\"${3|true,false|}\" ></ks-color-picker>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-color-picker>"
+    },
+
+    "Form: Transfer": {
+        "prefix": "kstr",
+        "body": [
+            "<ks-transfer v-model=\"$1\" :data=\"$2\" target-order=\"${3|original,push,unshift|}\" filterable @change=\"$4\"",
+                "\t:format=\"{noChecked: '\\${total}',hasChecked: '\\${checked}/\\${total}'}\">",
+            "</ks-transfer>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-transfer>"
+    },
+
+    "Form: Form": {
+        "prefix": "ksf",
+        "body": [
+            "<ks-form :model=\"${1:form}\" ref=\"${2:form}\" :rules=\"${3:rules}\" label-width=\"80px\" :inline=\"${4|false,true|}\" size=\"${5|normal,medium,small,mini|}\">",
+                "\t<ks-form-item label=\"$6\">",
+                    "\t\t<ks-input v-model=\"${1:form}.${7}\"></ks-input>",
+                "\t</ks-form-item>",
+                "\t<ks-form-item>",
+                    "\t\t<ks-button type=\"primary\" @click=\"onSubmit\">${8:立即创建}</ks-button>",
+                    "\t\t<ks-button>${9:取消}</ks-button>",
+                "\t</ks-form-item>",
+            "</ks-form>",
+            "${10}"
+        ],
+        "description": "KingSun UI <ks-form>"
+    },
+
+    "Form: Form Item": {
+        "prefix": "ksfi",
+        "body": [
+            "<ks-form-item label=\"$1\" size=\"${2|normal,medium,small,mini|}\">",
+                "\t$3",
+            "</ks-form-item>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-form-item>"
+    },
+
+    "Data: Table": {
+        "prefix": "kst",
+        "body": [
+            "<ks-table :data=\"$1\" border stripe>",
+                "\t<ks-table-column v-for=\"${2:col} in ${3:columns}\"",
+                    "\t\t:prop=\"${2:col}.${4:id}\"",
+                    "\t\t:key=\"${2:col}.${4:id}\"",
+                    "\t\t:label=\"${2:col}.${5:label}\"",
+                    "\t\t:width=\"${2:col}.${6:width}\">",
+                "\t</ks-table-column>",
+            "</ks-table>",
+            "${7}"
+        ],
+        "description": "KingSun UI <ks-table>"
+    },
+    
+    "Data:CRUD":{
+        "prefix":"kscrud",
+        "body":[
+            "<ks-crud :data=\"$1\" :tableOpts=\"\" :page.sync=\"\"></ks-crud>",
+            "$2"
+        ],
+        "description":"KingSun UI <ks-crud>"  
+    },
+
+    "Data: Table Column": {
+        "prefix": "kstc",
+        "body": [
+            "<ks-table-column",
+                "\t:prop=\"${1:col}.${2:id}\"",
+                "\t:label=\"${1:col}.${3:label}\"",
+                "\t:width=\"${1:col}.${4:width}\">",
+            "</ks-table-column>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-table-column>"
+    },
+
+    "Data: Tag": {
+        "prefix": "ksta",
+        "body": [
+            "<ks-tag type=\"${1|danger,info,success,warning|}\" size=\"${2|normal,medium,small,mini|}\"  effect=\"${3|dark,plain|}\" closable @close=\"${4}\">$5</ks-tag>",
+            "${6}"
+        ],
+        "description": "KingSun UI <ks-tag>"
+    },
+
+    "Data: Progress": {
+        "prefix": "kspr",
+        "body": [
+            "<ks-progress type=\"${1|line,circle,dashboard|}\" :percentage=\"$2\" status=\"${3|success,exception,warning|}\" :stroke-width=\"${4:6}\"></ks-progress>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-progress>"
+    },
+
+    "Data: Tree": {
+        "prefix": "kstree",
+        "body": [
+            "<ks-tree ref=\"${1:tree}\" :data=\"$2\" node-key=\"$3\" :props=\"$4\" empty-text=\"$5\" show-checkbox=\"${6|false,true|}\" highlight-current=\"${7|true,false|}\" @node-click=\"$8\">$9</ks-tree>",
+            "${10}"
+        ],
+        "description": "KingSun UI <ks-tree>"
+    },
+
+    "Data: Pagination": {
+        "prefix": "ksp",
+        "body": [
+            "<ks-pagination",
+                "\t@size-change=\"${1:sizeChange}\"",
+                "\t@current-change=\"${2:currentChange}\"",
+                "\t:current-page.sync=\"${3:currentPage}\"",
+                "\t:page-sizes=\"${4:[20, 40, 80, 100]}\"",
+                "\t:page-size=\"${5:pageSize}\"",
+                "\tlayout=\"total, sizes, prev, pager, next, jumper\"",
+                "\t:total=\"${6:totalNum}\" background>",
+                "\t:pager-count=\"${7:7}\">",
+            "</ks-pagination>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-pagination>"
+    },
+
+    "Data: Badge": {
+        "prefix": "ksba",
+        "body": [
+            "<ks-badge :value=\"${1}\" :max=\"${2:99}\" :is-dot=\"${3|false,true|}\" :hidden=\"${4|false,true|}\" type=\"${5|primary,success,warning,danger,info|}\">",
+                "\t<ks-button size=\"small\">$6</ks-button>",
+            "</ks-badge>",
+            "${7}"
+        ],
+        "description": "KingSun UI <ks-badge>"
+    },
+
+    "Data: Avatar": {
+        "prefix": "ksav",
+        "body": [
+            "<ks-avatar icon=\"ks-icon-user-solid\" size=\"${1|large,medium,small|}\" shape=\"${2|circle,square|}\" :src=\"${3}\" fit=\"${4|fill,contain,cover,none,scale-down|}\"></ks-avatar>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-avatar>"
+    },
+
+    "Notice: Alert": {
+        "prefix": "ksal",
+        "body": [
+            "<ks-alert :title=\"$1\" type=\"${2|info,success,warning,error|}\" effect=\"${3|light,dark|}\" show-icon closable></ks-alert>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-alert>"
+    },
+
+    "Notice: Loading": {
+        "prefix": "ksloads",
+        "body": [
+            "ksement-loading-text=\"${1:拼命加载中}\"",
+            "ksement-loading-spinner=\"${2:el-icon-loading}\"",
+            "ksement-loading-background=\"${3:rgba(0, 0, 0, 0.8)}\"",
+            "${4}"
+        ],
+        "description": "KingSun UI loading options"
+    },
+
+    "Notice: Message": {
+        "prefix": "ksme",
+        "body": [
+            "this.\\$message({",
+                "\tmessage: '$1',",
+                "\ttype: '${2|info,success,warning,error|}',",
+                "\tshowClose: ${3:true},",
+                "\tduration: ${4:3000},",
+            "});",
+            "${5}"
+        ],
+        "description": "KingSun UI $message"
+    },
+
+    "Notice: Messagebox": {
+        "prefix": "ksmebox",
+        "body": [
+            "this.\\$msgbox({",
+                "\ttitle: '$1',",
+                "\tmessage: '${2}',",
+                "\tshowCancelButton: true,",
+                "\tconfirmButtonText: '${3:OK}',",
+                "\tcancelButtonText: '${4:Cancel}',",
+                "\tcenter: ${5:false},",
+                "\tbeforeClose: (action, instance, done) => {",
+                    "\t\t${6}",
+                "\t}",
+            "}).then(action => {",
+                "\t${7}",
+            "}).catch(() => {",
+                "\t${8}",
+            "});",
+            "${9}"
+        ],
+        "description": "KingSun UI $msgbox"
+    },
+
+    "Notice: Messagebox Alert": {
+        "prefix": "ksmeal",
+        "body": [
+            "this.\\$alert('${1:content}', '${2:title}', {",
+                "\tconfirmButtonText: '${3:OK}',",
+                "\tcallback: action => {",
+                    "\t\t${4}",
+                "\t}",
+            "})",
+            "${5}"
+        ],
+        "description": "KingSun UI $alert"
+    },
+
+    "Notice: Messagebox Confirm": {
+        "prefix": "ksmecon",
+        "body": [
+            "this.\\$confirm('${1:content}', '${2:title}', {",
+                "\tconfirmButtonText: '${3:OK}',",
+                "\tcancelButtonText: '${4:Cancel}',",
+                "\ttype: '${5|success,info,warning,erro|}',",
+            "}).then(action => {",
+                "\t${6}",
+            "}).catch(() => {",
+                "\t${7}",
+            "});",
+            "${8}"
+        ],
+        "description": "KingSun UI $confirm"
+    },
+
+    "Notice: Messagebox Prompt": {
+        "prefix": "ksmepro",
+        "body": [
+            "this.\\$prompt('${1:content}', '${2:title}', {",
+                "\tconfirmButtonText: '${3:OK}',",
+                "\tcancelButtonText: '${4:Cancel}',",
+                "\tinputPattern: / ${5} /,",
+                "\tinputErrorMessage: '${6}',",
+            "}).then(({ value }) => {",
+                "\t${7}",
+            "}).catch(() => {",
+                "\t${8}",
+            "});",
+            "${9}"
+        ],
+        "description": "KingSun UI $prompt"
+    },
+
+    "Notice: Notification": {
+        "prefix": "ksno",
+        "body": [
+            "this.\\$notify({",
+                "\ttitle: '${1:title}',",
+                "\tmessage: '${2:message}',",
+                "\ttype: '${3|info,success,warning,error|}',",
+                "\tduration: '${4|4500, 0|}',",
+                "\tposition: '${5|top-right,top-left,bottom-right,bottom-left|}',",
+                "\tshowClose: '${6:true}',",
+            "});",
+            "${7}"
+        ],
+        "description": "KingSun UI $notify"
+    },
+
+    "Notice: Notification with type": {
+        "prefix": "ksnot",
+        "body": [
+            "this.\\$notify.${1|info,success,warning,error|}({",
+                "\ttitle: '${2:title}',",
+                "\tmessage: '${3:message}',",
+                "\tduration: '${4|4500, 0|}',",
+                "\tposition: '${5|top-right,top-left,bottom-right,bottom-left|}',",
+                "\tshowClose: '${6:true}',",
+            "});",
+            "${7}"
+        ],
+        "description": "KingSun UI $notify.type"
+    },
+
+    "Navigation: NavMenu Menu": {
+        "prefix": "ksmen",
+        "body": [
+            "<ks-menu mode=\"${1|horizontal,vertical|}\" default-active=\"$2\" @select=\"$3\">",
+                "\t<ks-submenu v-for=\"(${4:submenus}, ${5:index}) in ${6:menus}\"",
+                    "\t\t:index=\"${5:index} + 1\"",
+                    "\t\t:key=\"${4:submenus}.${7:key}\">",
+                    "\t\t<template slot=\"title\">{{${4:submenus}.${8:title}}}</template>",
+                    "\t\t<ks-menu-item v-for=\"(${9:item}, ${10:subIndex}) in ${4:submenus}.${11:menus}\"",
+                        "\t\t\t:index=\"(${5:index} + 1) + '-' + (${10:subIndex} + 1)\"",
+                        "\t\t\t:key=\"${9:item}.${12:key}\">",
+                            "\t\t\t\t{{${9:item}.${13:title}}}",
+                    "\t\t</ks-menu-item>",
+                "\t</ks-submenu>",
+            "</ks-menu>",
+            "${14}"
+        ],
+        "description": "KingSun UI <ks-menu> with <ks-submenu> and <ks-menu-item>"
+    },
+
+    "Navigation: NavMenu subMenu": {
+        "prefix": "kssubmen",
+        "body": [
+            "<ks-submenu :index=\"$1\">",
+                "\t<template slot=\"title\">$2</template>",
+                "\t<ks-menu-item v-for=\"(${3:item}, ${4:subIndex}) in $5\"",
+                    "\t\t:index=\"${4:subIndex} + 1\"",
+                    "\t\t:key=\"${3:item}.${6:key}\">",
+                        "\t\t\t{{${3:item}.${7:title}}}",
+                "\t</ks-menu-item>",
+            "</ks-submenu>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-submenu> with <ks-menu-item>"
+    },
+
+    "Navigation: NavMenu Menu Item": {
+        "prefix": "ksmeni",
+        "body": [
+            "<ks-menu-item index=\"$1\" key=\"$2\">$3</ks-menu-item>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-menu-item>"
+    },
+
+    "Navigation: Tabs": {
+        "prefix": "kstabs",
+        "body": [
+            "<ks-tabs v-model=\"$1\" type=\"${2|card,border-card,normal|}\" tab-position=\"${3|top,left,right,bottom|}\" @tab-click=\"$4\">",
+                "\t<ks-tab-pane v-for=\"${5:item} in ${6:panes}\"",
+                    "\t\t:key=\"${5:item}.${7:key}\"",
+                    "\t\t:label=\"${5:item}.${8:label}\"",
+                    "\t\t:name=\"${5:item}.${7:key}\">",
+                    "\t\t$9",
+                "\t</ks-tab-pane>",
+            "</ks-tabs>",
+            "${10}"
+        ],
+        "description": "KingSun UI <ks-tabs> with <ks-tab-pane>"
+    },
+
+    "Navigation: Tabs tab pane": {
+        "prefix": "kstabp",
+        "body": [
+            "<ks-tab-pane :label=\"$1\" :name=\"$2\">",
+                "\t$3",
+            "</ks-tab-pane>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-tab-pane>"
+    },
+
+    "Navigation: Breadcrumb": {
+        "prefix": "ksbr",
+        "body": [
+            "<ks-breadcrumb separator-class=\"${1:el-icon-arrow-right}\">",
+                "\t<ks-breadcrumb-item :to=\"{ path: '$2', name: '$3' }\">$4</ks-breadcrumb-item>",
+                "\t<ks-breadcrumb-item :to=\"{ path: '$5', name: '$6' }\">$7</ks-breadcrumb-item>",
+            "</ks-breadcrumb>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-breadcrumb>"
+    },
+
+    "Navigation: Breadcrumb Item": {
+        "prefix": "ksbri",
+        "body": [
+            "<ks-breadcrumb-item :to=\"{ path: '$1', name: '$2' }\">$3</ks-breadcrumb-item>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-breadcrumb-item>"
+    },
+
+    "Navigation: PageHeader": {
+        "prefix": "kspa",
+        "body": [
+            "<ks-page-header @back=\"$1\" content=\"$2\"></ks-page-header>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-page-header>"
+    },
+
+    "Navigation: Dropdown": {
+        "prefix": "ksdr",
+        "body": [
+            "<ks-dropdown trigger=\"${1:click}\" size=\"${2|default,medium,small,mini|}\" split-button type=\"${3|primary,success,warning,danger,info,text|}\" @command=\"$4\">",
+                "\t${5:title}",
+                "\t<ks-dropdown-menu slot=\"dropdown\">",
+                    "\t\t<ks-dropdown-item v-for=\"${6:item} in ${7:items}\"",
+                        "\t\t\t:key=\"${6:item}.${8:key}\" :command=\"${6:item}.${9:command}\">",
+                        "\t\t\t{{${6:item}.${10:title}}}",
+                    "\t\t</ks-dropdown-item>",
+                "\t</ks-dropdown-menu>",
+            "</ks-dropdown>",
+            "${11}"
+        ],
+        "description": "KingSun UI <ks-dropdown> with <ks-dropdown-item>"
+    },
+
+    "Navigation: Dropdown Item": {
+        "prefix": "ksdri",
+        "body": [
+            "<ks-dropdown-item :command=\"$1\">$2</ks-dropdown-item>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-dropdown-item>"
+    },
+
+    "Navigation: Steps": {
+        "prefix": "kssts",
+        "body": [
+            "<ks-steps :active=\"$1\" direction=\"${2|horizontal,vertical|}\" process-status=\"${3|wait,process,finish,error,success|}\" finish-status=\"${4|wait,process,finish,error,success|}\">",
+                "\t<ks-step v-for=\"${5:item} in ${6:items}\"",
+                    "\t\t:key=\"${5:item}.${7:key}\"",
+                    "\t\t:title=\"${5:item}.${8:title}\"",
+                    "\t\t:description=\"${5:item}.${9:description}\"",
+                    "\t\t:icon=\"${5:item}.${10:icon}\">",
+                "\t</ks-step>",
+            "</ks-steps>",
+            "${11}"
+        ],
+        "description": "KingSun UI <ks-steps> with <ks-step>"
+    },
+
+    "Navigation: Steps Step": {
+        "prefix": "ksst",
+        "body": [
+            "<ks-step :title=\"$1\" :description=\"$2\" :icon=\"$3\"></ks-step>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-step>"
+    },
+
+    "Others: Dialog": {
+        "prefix": "ksdi",
+        "body": [
+            "<ks-dialog",
+                "\ttitle=\"$1\"",
+                "\t:visible.sync=\"$2\"",
+                "\twidth=\"${3:30%}\"",
+                "\t@close=\"$4\">",
+                "\t<span>$5</span>",
+                "\t<span slot=\"footer\">",
+                    "\t\t<ks-button @click=\"$2 = false\">Cancel</ks-button>",
+                    "\t\t<ks-button type=\"primary\" @click=\"$6\">OK</ks-button>",
+                "\t</span>",
+            "</ks-dialog>",
+            "${7}"
+        ],
+        "description": "KingSun UI <ks-dialog>"
+    },
+
+    "Others: Tooltip": {
+        "prefix": "ksto",
+        "body": [
+            "<ks-tooltip content=\"$1\" placement=\"${2|top,top-start,top-end,bottom,bottom-start,bottom-end,left,left-start,left-end,right,right-start,right-end|}\" effect=\"${3|dark,light|}\">",
+                "\t${4:<!-- content to trigger tooltip here -->}",
+            "</ks-tooltip>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-tooltip>"
+    },
+
+    "Others: Popover": {
+        "prefix": "kspo",
+        "body": [
+            "<ks-popover",
+                "\t:ref=\"$1\"",
+                "\tplacement=\"${2|top,top-start,top-end,bottom,bottom-start,bottom-end,left,left-start,left-end,right,right-start,right-end|}\"",
+                "\ttitle=\"$3\"",
+                "\twidth=\"$4\"",
+                "\ttrigger=\"${5|click,focus,hover,manual|}\"",
+                "\tcontent=\"$6\">",
+                "\t${7: <!-- <ks-button slot=\"reference\">content</ks-button> -->}",
+            "</ks-popover>",
+            "${8}"
+        ],
+        "description": "KingSun UI <ks-popover>"
+    },
+
+    "Others: Popconfirm": {
+        "prefix": "kspoco",
+        "body": [
+            "<ks-popconfirm",
+                "\ttitle=\"$1\"",
+                "\tconfirmButtonText=\"$2\"",
+                "\tcancelButtonText=\"$3\"",
+                "\tconfirmButtonType=\"${4|primary,text,info,success,warning,danger|}\"",
+                "\tcancelButtonType=\"${5|text,primary,info,success,warning,danger|}\"",
+                "\ticon=\"${6:el-icon-question}\"",
+                "\ticonColor=\"${7:#f90}\"",
+                "\thideIcon=\"${8|false,true|}\">",
+                "\t<ks-button slot=\"reference\">$9</ks-button>",
+            "</ks-popconfirm>",
+            "${10}"
+        ],
+        "description": "KingSun UI <ks-popconfirm>"
+    },
+
+    "Others: Card": {
+        "prefix": "kscard",
+        "body": [
+            "<ks-card shadow=\"${1|always,hover,never|}\" :body-style=\"${2:{ padding: '20px' }}\">",
+                "\t<div slot=\"header\">",
+                    "\t\t<span>${3:<!-- card title -->}</span>",
+                "\t</div>",
+                "\t${4:<!-- card body -->}",
+            "</ks-card>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-card>"
+    },
+
+    "Others: Carousel": {
+        "prefix": "kscaro",
+        "body": [
+            "<ks-carousel height=\"${1:150px}\" type=\"${2|default,card|}\" direction=\"${3|horizontal,vertical|}\"",
+                "\t:initial-index=\"${4:0}\" :autoplay=\"${5|true, false|}\" :interval=\"${6:3000}\" :loop=\"${7|true,false|}\"",
+                "\ttrigger=\"${8|hover,click|}\" indicator-position=\"${9|outside,inside,none|}\" arrow=\"${10|hover,always,never|}\">",
+                "\t<ks-carousel-item v-for=\"${11:item} in ${12:items}\" :key=\"${11:item}.${13:key}\" :label=\"${14}\">",
+                    "\t\t${15:<!-- content -->}",
+                "\t</ks-carousel-item>",
+            "</ks-carousel>",
+            "${16}"
+        ],
+        "description": "KingSun UI <ks-carousel> with <ks-carousel-item>"
+    },
+
+    "Others: Carousel Item": {
+        "prefix": "kscaroi",
+        "body": [
+            "<ks-carousel-item :label=\"${1}\">",
+                "\t${2:<!-- content -->}",
+            "</ks-carousel-item>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-carousel-item>"
+    },
+
+    "Others: Collapse": {
+        "prefix": "kscolla",
+        "body": [
+            "<ks-collapse v-model=\"${1:activeNames}\" :accordion=\"${2:false}\" @change=\"$3\">",
+                "\t<ks-collapse-item v-for=\"${4:item} in ${5:items}\"",
+                    "\t\t:key=\"${4:item}.${6:id}\"",
+                    "\t\t:title=\"${4:item}.${7:title}\"",
+                    "\t\t:name=\"${4:item}.${6:id}\">",
+                    "\t\t${8:<!-- content -->}",
+                "\t</ks-collapse-item>",
+            "</ks-collapse>",
+            "${9}"
+        ],
+        "description": "KingSun UI <ks-collapse> with <ks-collapse-item>"
+    },
+
+    "Others: Collapse Item": {
+        "prefix": "kscollai",
+        "body": [
+            "<ks-collapse-item :title=\"$1\" :name=\"$2\">",
+                "\t${3:<!-- content -->}",
+            "</ks-collapse-item>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-collapse-item>"
+    },
+
+    "Others: Collapse Timeline": {
+        "prefix": "ksti",
+        "body": [
+            "<ks-timeline :reverse=\"$1\">",
+                "\t<ks-timeline-item v-for=\"${2:item} in ${3:items}\"",
+                    "\t\t:key=\"${2:item}.${4:id}\"",
+                    "\t\t:timestamp=\"${2:item}.${5:timestamp}\"",
+                    "\t\tplacement=\"${6|top,bottom|}\"",
+                    "\t\ttype=\"${7|primary,success,warning,danger,info|}\"",
+                    "\t\tsize=\"${8|normal,large|}\">",
+                    "\t\t${9:<!-- content -->}",
+                "\t</ks-timeline-item>",
+            "</ks-timeline>",
+            "${10}"
+        ],
+        "description": "KingSun UI <ks-timeline> with <ks-timeline-item>"
+    },
+    
+    "Others: Collapse Timeline Item": {
+        "prefix": "kstii",
+        "body": [
+            "<ks-timeline-item",
+                "\ttimestamp=\"${1}\"",
+                "\tplacement=\"${2|top,bottom|}\"",
+                "\ttype=\"${3|primary,success,warning,danger,info|}\"",
+                "\tsize=\"${4|normal,large|}\">",
+                "\t${5:<!-- content -->}",
+            "</ks-timeline-item>",
+            "${6}"
+        ],
+        "description": "KingSun UI <ks-timeline-item>"
+    },
+
+    "Others: Divider": {
+        "prefix": "ksd",
+        "body": [
+            "<ks-divider direction=\"${1|horizontal,vertical|}\" content-position=\"${2|left,right,center|}\">$3</ks-divider>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-divider>"
+    },
+
+    "Others: Calendar": {
+        "prefix": "kscal",
+        "body": [
+            "<ks-calendar v-model=\"${1}\" :first-day-of-week=\"${2:1}\"></ks-calendar>",
+            "${3}"
+        ],
+        "description": "KingSun UI <ks-calendar>"
+    },
+
+    "Others: Image": {
+        "prefix": "ksim",
+        "body": [
+            "<ks-image :src=\"${1}\" fit=\"${2|fill,contain,cover,none,scale-down|}\" :lazy=\"${3|true,false|}\"></ks-image>",
+            "${4}"
+        ],
+        "description": "KingSun UI <ks-image>"
+    },
+
+    "Others: Backtop": {
+        "prefix": "ksback",
+        "body": [
+            "<ks-backtop :target=\"${1}\" :right=\"${2:40}\" :bottom=\"${3:40}\">$4</ks-backtop>",
+            "${5}"
+        ],
+        "description": "KingSun UI <ks-backtop>"
+    },
+
+    "Others: InfiniteScroll": {
+        "prefix": "ksinfi",
+        "body": [
+            "v-infinite-scroll=\"${1}\"",
+            ":infinite-scroll-delay=\"${2}\"",
+            ":infinite-scroll-distance=\"${3}\"",
+            ":infinite-scroll-disabled=\"${4|false,true|}\"",
+            ":infinite-scroll-immediate=\"${5|true,false|}\"",
+        ],
+        "description": "KingSun UI v-infinite-scroll"
+    },
+
+    "Others: Drawer": {
+        "prefix": "ksdra",
+        "body": [
+            "<ks-drawer title=\"${1}\" :visible.sync=\"${2}\" direction=\"${3|rtl,ltr,ttb,btt|}\" size=\"${4:30%}\"",
+                "\t:before-close=\"${5}\" :destroy-on-close=\"${6|true,false|}\" :show-close=\"${7|true,false|}\" :wrapperClosable=\"${8|true,false|}\">",
+            "</ks-drawer>",
+            "${9}"
+        ],
+        "description": "KingSun UI <ks-drawer>"
+    }
+}

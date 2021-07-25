@@ -1,0 +1,54 @@
+{
+  "name": "ks-ui-snippets",
+  "displayName": "kingsun ui snippets",
+  "version": "0.1.4",
+  "publisher":"tigerliu",
+  "description": "Code snippets for kingsun-UI which is a Vue.js 2.0 UI Toolkit for Web",
+  "categories": ["Snippets"],
+  "engines":{
+    "vscode" : "^1.0.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/kingsun-ui.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/kingsun-ui.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/kingsun-ui.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/kingsun-ui.json"
+      }
+    ]
+  },
+  "icon": "images/icon.png",
+  "main": "./out/extension",
+  "activationEvents": [
+    "onLanguage:vuejs"
+  ],
+  "keywords": [
+    "ksui",
+    "ks",
+    "kingsun"
+  ],
+  "author": {
+    "name": "tigerliu"
+  },
+  "license": "MIT",
+  "bugs": {
+      "url": "https://github.com/tiger6/KingSun-UI-Snippets/issues",
+      "email": "tigersoft@163.com"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/tiger6/KingSun-UI-Snippets.git"
+  },
+  "homepage": "https://github.com/tiger6/KingSun-UI-Snippets/README.md"
+}
